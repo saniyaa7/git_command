@@ -1,4 +1,4 @@
-git init (Intilized repository)
+git init (Intilized repository)\n
 git add . (add all file)
 git commit (commit changes)
 git show (show last commit)
