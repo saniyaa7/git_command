@@ -1,0 +1,23 @@
+Q1.  What is cherry-pick? Explain the use case of it also write steps to do it.
+
+Ans:
+it refers to selecting and applying specific commits from one branch to another. This allows you to choose specific changes made in one branch and apply them to another branch without merging the entire branch.
+
+use cases:
+-If you by mistake make a commit in an incorrect branch, then using cherry-pick you can apply the required changes.
+- Instead of pull all commit can pull one specific commit 
+ 
+Steps:
+1: commit changes in a branch A that will genrate a specific id <commit_hash>
+2: create new branch
+	git checkout -b <branch_name>
+3: to pull specific commit use cherry-pick
+	git cherry-pick <commit_hash>
+4:Now that commit is pull in local sysytem 
+5:to push in remote repository
+	git add .
+	git push origin <branch_name>
+
+
+
+	
