@@ -1,0 +1,18 @@
+Q.Difference between --force push and --force-with-lease, You have to show the use of both, also you have to show in what scenario --force-with-lease is used?
+
+Ans:
+git push --force-with-lease is a safer alternative to git push --force.
+It allows you to push changes to the remote branch only if the remote branch is at the same commit as the one you have locally.
+If the remote branch has been updated by someone else, the push will be rejected, preventing accidental overwrites.
+
+1)git push --force:
+	This command will still push if there is extra commit on remote branch
+
+
+2)git push --force-with-lease
+	This command will not let you push if there is extra commit on remote branch
+
+scenario 
+
+--force-with-lease is used in Git when you need to forcefully push changes to a remote branch 
+while avoiding overwriting others' changes, especially in collaborative environments or when dealing with branch protection rules on Git hosting platforms.

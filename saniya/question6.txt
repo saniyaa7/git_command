@@ -1,0 +1,12 @@
+Q.How to un stage changes from the staged area. write command for it.
+Ans:
+git reset --soft HEAD~1 
+	after commit it will go to staging area(add . changes remain same)
+
+
+	git reset HEAD filename
+Replace "filename" with the actual name of the file to unstage. 
+
+to unstage all changes:
+	git reset HEAD .
+This command resets the staging area, but it leaves the working directory unchanged. changes will still be present in working directory.
