@@ -19,6 +19,7 @@
 19. git branch -D BRNACH_NAME(Forcefully Delete BRNACH_NAMElocally)
 20. git branch -d BRNACH_NAME(delte the BRNACH_NAME)
 
+
 Assignment Question
 1.How to commit multiple line
 Ans: git commit -m "First message." -m "Detail description."
@@ -35,3 +36,24 @@ git commit --amend --no-edit
 Git stash study whole
 Ans: git stash apply stash@{0} 
 git stash pop stash@{1} -->permenantly destroy stash@{1} when check with git command git stash list
+
+1.Initialize a git repository  - 
+git init 
+
+2.Create at least 2 feature branches from main branch (Add multiple files)  -
+git branch feature1 (create master feature1)
+git checkout -b feature2 (create feature2 branch and switched to it)
+git add . (add multiple files)
+
+3.Add commits on each feature branch.
+git commit -m "commit changes"
+
+4.Try these commands, stash, reset soft, reset hard, diff, branch -d & -D  - push each branch to the remote
+ git stash (store in local pc as form of stack)
+ git reset --soft HEAD~1 (to undo last commit)
+ git reset --hard HEAD~1 (revert changes of file permenantly)
+ git diff (Show changes between working directory and the last commit:)
+ git branch -D BRNACH_NAME(Forcefully Delete BRNACH_NAMElocally)
+ git branch -d BRNACH_NAME(delte the BRNACH_NAME)
+ git remote add origin https://github.com/saniyaa7/git_command.git 	(add origin to github repository)
+ git push -u origin BRNACH_NAME(pushing BRNACH_NAMEto origin repository)
