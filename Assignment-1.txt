@@ -1,0 +1,59 @@
+1. git init  (Intilized repository)
+2. git add .  (add all files in Staged Area)
+3. git add FILE_NAME(add FILE_NAME in Stages Area)
+4. git status	(To Check Status of File)
+5. git commit -m "message" (commit changes with meassage)
+6. git show	(Get detail of last commit)
+7. git show COMMIT_ID	(Get detail of COMMIT_ID)
+8. git log (show all commits of particular branch)
+9. git branch BRNACH_NAME(create branch with name BRNACH_NAME)
+10. git checkout -b BRNACH_NAME(create and switch branch to BRNACH_NAME)
+11. git checkout BRNACH_NAME(switched to branch BRNACH_NAME)
+12. git reset --soft HEAD~1 (to undo last commit)
+13. git reset --hard HEAD~1 (revert changes of file permenantly)
+14. git stash (store in local pc as form of stack)
+15. git stash list (show stack ist)
+16. git remote add origin https://github.com/saniyaa7/git_command.git 	(add origin to github repository)
+17. git push -u origin BRNACH_NAME(pushing BRNACH_NAMEto origin repository)
+18. git diff branch_other ( Compare Currently Working Branch with Other Branch)
+19. git branch -D BRNACH_NAME(Forcefully Delete BRNACH_NAMElocally)
+20. git branch -d BRNACH_NAME(delte the BRNACH_NAME)
+
+
+Assignment Question
+1.How to commit multiple line
+Ans: git commit -m "First message." -m "Detail description."
+
+2.How to change commit Mesg
+Ans: # Edit hello.py and main.py
+git add hello.py
+git commit 
+# Realize you forgot to add the changes from main.py 
+git add main.py 
+git commit --amend --no-edit
+
+3.How to get my code back if I do git stash
+Git stash study whole
+Ans: git stash apply stash@{0} 
+git stash pop stash@{1} -->permenantly destroy stash@{1} when check with git command git stash list
+
+1.Initialize a git repository  - 
+git init 
+
+2.Create at least 2 feature branches from main branch (Add multiple files)  -
+git branch feature1 (create master feature1)
+git checkout -b feature2 (create feature2 branch and switched to it)
+git add . (add multiple files)
+
+3.Add commits on each feature branch.
+git commit -m "commit changes"
+
+4.Try these commands, stash, reset soft, reset hard, diff, branch -d & -D  - push each branch to the remote
+ git stash (store in local pc as form of stack)
+ git reset --soft HEAD~1 (to undo last commit)
+ git reset --hard HEAD~1 (revert changes of file permenantly)
+ git diff (Show changes between working directory and the last commit:)
+ git branch -D BRNACH_NAME(Forcefully Delete BRNACH_NAMElocally)
+ git branch -d BRNACH_NAME(delte the BRNACH_NAME)
+ git remote add origin https://github.com/saniyaa7/git_command.git 	(add origin to github repository)
+ git push -u origin BRNACH_NAME(pushing BRNACH_NAMEto origin repository)
